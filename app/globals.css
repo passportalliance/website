@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pa-bg: #0d1117;
+  --pa-bg-secondary: #161b22;
+  --pa-blue: #4361ee;
+  --pa-teal: #2ec4b6;
+  --pa-light: #f8fafc;
+  --pa-light-muted: #cbd5e1;
+  --pa-border: #30363d;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--pa-bg);
+  color: var(--pa-light);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--pa-blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #3651e8;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--pa-light);
+  border: 1px solid var(--pa-border);
+}
+
+.btn-secondary:hover {
+  background: var(--pa-bg-secondary);
+  border-color: var(--pa-light-muted);
+}
+
+.btn-cta {
+  background: var(--pa-teal);
+  color: var(--pa-bg);
+}
+
+.btn-cta:hover {
+  background: #29b3a3;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--pa-light-muted);
+  max-width: 600px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--pa-blue), var(--pa-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--pa-blue);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
