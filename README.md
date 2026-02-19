@@ -50,6 +50,13 @@ npm run start
 - Set environment variables (at least `NEXT_PUBLIC_DOCS_URL`).
 - Deploy to `passportalliance.org`.
 
+## Stewardship and Contact
+
+- Stewarded by AetherPro Technologies
+- Founder/CEO/CTO: Cory Gibson
+- Contributor and partnership inquiries: `partnerships@aetherpro.tech`
+- Issuer onboarding and operations: `operations@aetherpro.us`
+
 ## Repository Hygiene
 
 This repo intentionally does **not** track:

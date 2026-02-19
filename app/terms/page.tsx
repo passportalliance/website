@@ -53,7 +53,7 @@ export default function TermsPage() {
 
           <h2 className="text-xl font-bold text-pa-light mb-4">Contact Us</h2>
           <p className="text-pa-light-muted mb-6">
-            For terms-related inquiries, please contact us at: legal@passportalliance.org
+            For terms-related inquiries, please contact us at: operations@aetherpro.us
           </p>
         </div>
       </Section>

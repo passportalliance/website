@@ -32,6 +32,18 @@ export default function AboutPage() {
 
       <Section className="bg-pa-bg-secondary">
         <div className="max-w-3xl">
+          <h2 className="text-2xl font-bold text-pa-light mb-6">Stewardship</h2>
+          <div className="p-6 bg-pa-bg border border-pa-border rounded-lg mb-8">
+            <p className="text-pa-light-muted mb-4">
+              Passport Alliance was created by <strong className="text-pa-light">Cory Gibson</strong>, Founder, CEO, and CTO of{' '}
+              <strong className="text-pa-light">AetherPro Technologies</strong>.
+            </p>
+            <p className="text-pa-light-muted mb-0">
+              Cory created Passport as a Keycloak fork and introduced the Legal-Based Access Control (LBAC) framework as part of the
+              broader APIS vision. The project is now open to community contributors and future issuers.
+            </p>
+          </div>
+
           <h2 className="text-2xl font-bold text-pa-light mb-6">What We Do</h2>
           <div className="space-y-4">
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">

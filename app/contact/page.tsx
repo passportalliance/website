@@ -5,6 +5,9 @@ import Section from '@/components/Section'
 import { config } from '@/lib/config'
 
 export default function ContactPage() {
+  const partnershipsEmail = 'partnerships@aetherpro.tech'
+  const operationsEmail = 'operations@aetherpro.us'
+
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
   const [formData, setFormData] = useState({
     name: '',
@@ -53,7 +56,7 @@ export default function ContactPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">Contact Us</h1>
           <p className="text-xl text-pa-light-muted">
-            Get in touch with the Passport Alliance for questions about the standard, partnerships, or general inquiries.
+            Get in touch with Passport Alliance for issuer onboarding, community contribution, partnerships, and operations.
           </p>
         </div>
       </Section>
@@ -159,7 +162,10 @@ export default function ContactPage() {
                     <strong>Contact form not configured.</strong> To enable the contact form, set the <code>NEXT_PUBLIC_CONTACT_ENDPOINT</code> environment variable.
                   </p>
                   <p className="text-pa-light-muted text-sm mt-2">
-                    You can also reach us directly at: <a href="mailto:contact@passportalliance.org" className="text-pa-blue hover:underline">contact@passportalliance.org</a>
+                    You can reach us directly at{' '}
+                    <a href={`mailto:${operationsEmail}`} className="text-pa-blue hover:underline">{operationsEmail}</a>{' '}
+                    or{' '}
+                    <a href={`mailto:${partnershipsEmail}`} className="text-pa-blue hover:underline">{partnershipsEmail}</a>.
                   </p>
                 </div>
               )}
@@ -188,12 +194,21 @@ export default function ContactPage() {
         <Section className="pt-0">
           <div className="max-w-xl">
             <div className="p-6 bg-pa-bg-secondary border border-pa-border rounded-lg">
-              <h2 className="text-lg font-semibold text-pa-light mb-4">Other Ways to Reach Us</h2>
+              <h2 className="text-lg font-semibold text-pa-light mb-4">Direct Contact Channels</h2>
+              <p className="text-pa-light-muted text-sm mb-4">
+                Passport Alliance is stewarded by Cory Gibson (Founder, CEO, and CTO of AetherPro Technologies). Use the channels below for now while Passport Alliance domain mailboxes are being set up.
+              </p>
               <ul className="space-y-3 text-pa-light-muted text-sm">
                 <li>
-                  <strong>Email:</strong>{' '}
-                  <a href="mailto:contact@passportalliance.org" className="text-pa-blue hover:underline">
-                    contact@passportalliance.org
+                  <strong>Issuer onboarding and operations:</strong>{' '}
+                  <a href={`mailto:${operationsEmail}`} className="text-pa-blue hover:underline">
+                    {operationsEmail}
+                  </a>
+                </li>
+                <li>
+                  <strong>Partnerships and ecosystem collaboration:</strong>{' '}
+                  <a href={`mailto:${partnershipsEmail}`} className="text-pa-blue hover:underline">
+                    {partnershipsEmail}
                   </a>
                 </li>
                 <li>
