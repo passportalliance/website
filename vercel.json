@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source": "/.well-known/alliance-root.jwk",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
+    }
+  ]
+}

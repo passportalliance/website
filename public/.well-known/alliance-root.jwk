@@ -1,8 +1,0 @@
-{
-  "crv": "Ed25519",
-  "kid": "apis-root-v1.0-202602",
-  "kty": "OKP",
-  "x": "SNbXcT_ledLuO-SZI4cq01wpTbYznpMsdfSdX3eTNJQ",
-  "use": "sig",
-  "alg": "EdDSA"
-}
