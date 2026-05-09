@@ -1,7 +1,7 @@
 {
   "name": "Passport Alliance",
   "short_name": "Passport Alliance",
-  "description": "The Identity Standard for AI Agents",
+  "description": "APIS v2.0 standards for verifiable AI agent identity",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0d1117",

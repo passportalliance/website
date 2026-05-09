@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Passport Alliance | The Identity Standard for AI Agents',
-  description: 'The Identity Standard for AI Agents. Verifiable identity, scoped authorization, and full accountability for autonomous systems.',
+  description: 'The open standards initiative and governing body behind APIS v2.0: verifiable identity, scoped authorization, and accountable AI agent operation.',
 }
 
 export default function Home() {
@@ -16,11 +16,11 @@ export default function Home() {
       <Section className="pt-20 pb-16">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-pa-light mb-6">
-            The Identity Standard for <span className="text-gradient">AI Agents</span>
+            Open Standards for <span className="text-gradient">Verifiable AI Agent Identity</span>
           </h1>
           <p className="text-xl text-pa-light-muted mb-10 max-w-2xl mx-auto">
-            Verifiable identity. Scoped authorization. Full accountability.
-            An open standard enabling autonomous agents to operate with trust and traceability.
+            Passport Alliance governs APIS v2.0, the Agent Passport Issuance Standard for agent legal identity,
+            hardware trust anchors, and interoperable delegation across organizations and frameworks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTA href={config.docsUrl} variant="primary" external>
@@ -86,7 +86,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="section-title text-center mb-4">Three Pillars of Trust</h2>
           <p className="section-subtitle text-center mx-auto mb-12">
-            APIS establishes a foundation for agent identity and authorization
+            APIS v2.0 establishes a foundation for agent identity, authorization, hardware-rooted trust, and revocation.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-pa-light mb-3">Identity</h3>
               <p className="text-pa-light-muted text-sm">
-                Cryptographically verifiable credentials that prove an agent&apos;s identity, issued by recognized authorities.
+                Realm-scoped DIDs and Agent Passports that bind an agent key to an issuer, principal, mandate, and trust tier.
               </p>
             </div>
             <div className="text-center">
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-pa-light mb-3">Authorization</h3>
               <p className="text-pa-light-muted text-sm">
-                Explicit scopes and mandates that define what actions an agent is permitted to take on behalf of its principal.
+                Principal-signed mandates that define what an agent is permitted to do, on whose behalf, and under what constraints.
               </p>
             </div>
             <div className="text-center">
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-pa-light mb-3">Accountability</h3>
               <p className="text-pa-light-muted text-sm">
-                Complete audit trails linking actions back to principals, with revocable credentials for trust enforcement.
+                Signed agent actions, public verification, and revocation by nonce increment for trust enforcement.
               </p>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="section-title text-center mb-4">How It Works</h2>
           <p className="section-subtitle text-center mx-auto mb-12">
-            A trust chain from issuers to principals to delegates
+            A trust chain from Realm Issuers to principals, mandates, delegates, and machine trust anchors.
           </p>
           <div className="relative">
             {/* Trust Chain Flow */}
@@ -143,8 +143,8 @@ export default function Home() {
                     <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-pa-light">Issuer</h3>
-                <p className="text-xs text-pa-light-muted mt-1">Issues credentials</p>
+                <h3 className="font-semibold text-pa-light">Realm Issuer</h3>
+                <p className="text-xs text-pa-light-muted mt-1">Issues passports</p>
               </div>
 
               {/* Arrow */}
@@ -190,7 +190,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-pa-light">Delegate</h3>
-                <p className="text-xs text-pa-light-muted mt-1">Acts with authority</p>
+                <p className="text-xs text-pa-light-muted mt-1">Signs authorized actions</p>
               </div>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-pa-light mb-1">No existing standard addresses this</h3>
                 <p className="text-pa-light-muted text-sm">
-                  Current identity standards were designed for humans, not autonomous agents. APIS fills this gap.
+                  Current identity standards were designed for humans and services, not autonomous delegated agents. APIS v2.0 fills this gap.
                 </p>
               </div>
             </div>

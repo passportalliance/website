@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn about the Passport Alliance mission to establish identity and authorization standards for AI agents.',
+  description: 'Learn about Passport Alliance, the open standards initiative and governing body behind APIS v2.0.',
 }
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">About Passport Alliance</h1>
           <p className="text-xl text-pa-light-muted">
-            Building the foundation for trustworthy AI agent identity.
+            The open standards initiative and governing body behind APIS v2.0.
           </p>
         </div>
       </Section>
@@ -22,10 +22,10 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Our Mission</h2>
           <p className="text-pa-light-muted mb-6">
-            The Passport Alliance is dedicated to creating and maintaining open standards for AI agent identity, authorization, and accountability. We believe that as autonomous agents become more prevalent in enterprise and public-sector operations, there must be a standardized framework for establishing trust.
+            Passport Alliance creates and maintains open standards for AI agent identity, authorization, trust-tier signaling, and accountability. Its current canonical standard is APIS v2.0, published May 4, 2026.
           </p>
           <p className="text-pa-light-muted mb-6">
-            Our work is driven by the recognition that current identity standards were designed for human users. AI agents require a different approach—one that addresses the unique challenges of machine-to-machine interaction, delegation, and automated decision-making.
+            Our work is driven by the recognition that current identity standards were designed for human users and conventional services. Autonomous agents require a framework for principal authority, mandates, delegates, Machine Passports, Agent Passports, signed actions, and rapid revocation.
           </p>
         </div>
       </Section>
@@ -39,8 +39,7 @@ export default function AboutPage() {
               <strong className="text-pa-light">AetherPro Technologies</strong>.
             </p>
             <p className="text-pa-light-muted mb-0">
-              Cory created Passport as a Keycloak fork and introduced the Legal-Based Access Control (LBAC) framework as part of the
-              broader APIS vision. The project is now open to community contributors and future issuers.
+              Cory created the early Passport work and Legal-Based Access Control (LBAC) framework that informed APIS. Passport Alliance now presents APIS v2.0 as a standards-oriented trust framework for broader issuer, developer, and verifier participation.
             </p>
           </div>
 
@@ -49,7 +48,7 @@ export default function AboutPage() {
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Develop Open Standards</h3>
               <p className="text-pa-light-muted text-sm">
-                Create and maintain the APIS specification—an open, royalty-free standard for agent identity and authorization that anyone can implement.
+                Create and maintain APIS, an open standard for Agent Passport issuance, realm-scoped DIDs, mandates, hardware trust anchors, and verification.
               </p>
             </div>
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
@@ -93,25 +92,25 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Roadmap</h2>
           <p className="text-pa-light-muted mb-6">
-            The Passport Alliance is in early stages. Our current focus:
+            APIS v2.0 is the current canonical publication. Our current focus:
           </p>
 
           <div className="relative border-l border-pa-border ml-4 space-y-8">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-blue rounded-full -translate-x-1.5"></div>
-              <h3 className="font-semibold text-pa-light">Phase 1: Foundation</h3>
-              <p className="text-pa-light-muted text-sm mt-1">Core specification development and reference implementation</p>
-              <span className="text-xs text-pa-teal">Current</span>
+              <h3 className="font-semibold text-pa-light">APIS v2.0 Publication</h3>
+              <p className="text-pa-light-muted text-sm mt-1">Canonical specification published with DOI and v1.0 supersession</p>
+              <span className="text-xs text-pa-teal">Published May 4, 2026</span>
             </div>
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-border rounded-full -translate-x-1.5"></div>
-              <h3 className="font-semibold text-pa-light">Phase 2: Ecosystem Growth</h3>
-              <p className="text-pa-light-muted text-sm mt-1">Issuer onboarding, SDK development, and documentation</p>
+              <h3 className="font-semibold text-pa-light">Issuer and Verifier Adoption</h3>
+              <p className="text-pa-light-muted text-sm mt-1">Realm Issuer onboarding, SDK development, and conformance documentation</p>
             </div>
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-border rounded-full -translate-x-1.5"></div>
-              <h3 className="font-semibold text-pa-light">Phase 3: Production Ready</h3>
-              <p className="text-pa-light-muted text-sm mt-1">Security audits, compliance frameworks, and interoperability testing</p>
+              <h3 className="font-semibold text-pa-light">Compliance Alignment</h3>
+              <p className="text-pa-light-muted text-sm mt-1">Security audits, CMMC Level 2 / NIST SP 800-171 alignment, and interoperability testing</p>
             </div>
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-border rounded-full -translate-x-1.5"></div>

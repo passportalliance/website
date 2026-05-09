@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'For Developers',
-  description: 'Build with APIS - Learn how to integrate agent identity and authorization into your systems with our SDKs and API references.',
+  description: 'Build with APIS v2.0: provision Agent Passports, verify signed actions, enforce mandates, and check revocation.',
 }
 
 export default function DevelopersPage() {
@@ -16,7 +16,7 @@ export default function DevelopersPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">For Developers</h1>
           <p className="text-xl text-pa-light-muted">
-            Build agent systems that implement APIS for identity, authorization, and accountability.
+            Build agent systems that implement APIS v2.0 for identity, authorization, trust-tier signaling, and accountability.
           </p>
         </div>
       </Section>
@@ -25,7 +25,7 @@ export default function DevelopersPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Quick Integration Path</h2>
           <p className="text-pa-light-muted mb-8">
-            Get started with APIS integration in four steps.
+            Get started with APIS v2.0 integration in four steps.
           </p>
 
           <div className="space-y-6">
@@ -45,7 +45,7 @@ export default function DevelopersPage() {
                 <h3 className="text-lg font-semibold text-pa-light">Integrate SDK</h3>
               </div>
               <p className="text-pa-light-muted text-sm">
-                Use the APIS SDK for your language to handle credential issuance, validation, and verification.
+                Use APIS-APP or SDK tooling to perform passport-init provisioning, credential validation, and verification.
               </p>
             </div>
 
@@ -55,7 +55,7 @@ export default function DevelopersPage() {
                 <h3 className="text-lg font-semibold text-pa-light">Implement Flows</h3>
               </div>
               <p className="text-pa-light-muted text-sm">
-                Follow the standard flows for credential issuance, mandate creation, signature verification, and revocation.
+                Follow passport-init, passport-renew, passport-revoke, mandate creation, signature verification, and revocation flows.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export default function DevelopersPage() {
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Credentials</h3>
               <p className="text-pa-light-muted text-sm">
-                Verifiable credentials are JSON documents signed by issuers that establish agent identity.
+                Agent Passports and Machine Passports are signed credentials that establish agent and machine identity.
               </p>
             </div>
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
@@ -98,6 +98,12 @@ export default function DevelopersPage() {
               <h3 className="font-semibold text-pa-light mb-2">Registry</h3>
               <p className="text-pa-light-muted text-sm">
                 Public infrastructure for credential status checking and revocation verification.
+              </p>
+            </div>
+            <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
+              <h3 className="font-semibold text-pa-light mb-2">Trust Tiers</h3>
+              <p className="text-pa-light-muted text-sm">
+                Verifiers can require Tier 1 physical TPM, Tier 2 vTPM, Tier 2.5 DNSSEC, Tier 3 software HSM, or Tier 4 development keys.
               </p>
             </div>
           </div>

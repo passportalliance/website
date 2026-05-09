@@ -4,7 +4,14 @@ Official root-domain website for `passportalliance.org`.
 
 ## Purpose
 
-This site introduces APIS (Agent Principal Identity Standard), explains issuer/developer/governance paths, and routes users to full docs at `https://docs.passportalliance.org`.
+This site introduces APIS v2.0 (Agent Passport Issuance Standard), explains Passport Alliance governance, issuer/developer/verifier paths, and routes users to full docs at `https://docs.passportalliance.org`.
+
+Current canonical publication:
+
+- **Title:** Passport Alliance Specification (APIS v2.0): Agent Passport Issuance Standard with Hardware Trust Anchors and Universal Framework Interoperability
+- **DOI:** https://doi.org/10.5281/zenodo.18820877
+- **Published:** May 4, 2026
+- **Status:** Version 2.0 — Canonical — Supersedes APIS v1.0
 
 ## Stack
 

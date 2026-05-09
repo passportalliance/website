@@ -5,8 +5,8 @@ import LinkCard from '@/components/LinkCard'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The APIS Standard',
-  description: 'Agent Principal Identity Standard (APIS) - An open standard for verifiable AI agent identity, scoped authorization, and full accountability.',
+  title: 'APIS v2.0 Standard',
+  description: 'Agent Passport Issuance Standard (APIS v2.0) - the canonical standard for verifiable AI agent identity, hardware trust anchors, and delegation.',
 }
 
 export default function StandardPage() {
@@ -14,9 +14,9 @@ export default function StandardPage() {
     <>
       <Section className="pt-20 pb-12">
         <div className="max-w-3xl">
-          <h1 className="text-4xl font-bold text-pa-light mb-6">The APIS Standard</h1>
+          <h1 className="text-4xl font-bold text-pa-light mb-6">APIS v2.0 Standard</h1>
           <p className="text-xl text-pa-light-muted">
-            Agent Principal Identity Standard (APIS) defines a framework for verifiable identity, scoped authorization, and accountability for AI agents.
+            The Agent Passport Issuance Standard defines verifiable agent legal identity, realm-scoped DIDs, hardware trust anchors, mandates, and revocation.
           </p>
         </div>
       </Section>
@@ -25,15 +25,16 @@ export default function StandardPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-4">What is APIS?</h2>
           <p className="text-pa-light-muted mb-6">
-            APIS (Agent Principal Identity Standard) is an open standard designed specifically for autonomous AI agents. While existing identity standards like OAuth and OpenID Connect were built for human users, APIS addresses the unique requirements of machine-to-machine and agentic interactions.
+            APIS v2.0 is the current canonical Passport Alliance standard for autonomous AI agents. It supersedes APIS v1.0 and adds Machine Passports, TPM 2.0 and vTPM trust anchors, DNSSEC-anchored identity, software trust tiers, and APIS-APP automated provisioning.
           </p>
 
           <h3 className="text-lg font-semibold text-pa-light mb-3">What APIS Is</h3>
           <ul className="list-disc list-inside text-pa-light-muted mb-6 space-y-2">
             <li>A standard for verifiable credentials tied to agent identity</li>
             <li>A framework for explicit authorization scopes and mandates</li>
-            <li>A revocation mechanism for immediate trust termination</li>
+            <li>A revocation mechanism based on status checks and monotonic nonce increments</li>
             <li>A delegation chain linking agents back to authorizing principals</li>
+            <li>A trust-tier model spanning physical TPM, virtual TPM, DNSSEC, software HSM, and development keys</li>
           </ul>
 
           <h3 className="text-lg font-semibold text-pa-light mb-3">What APIS Is Not</h3>
@@ -53,13 +54,13 @@ export default function StandardPage() {
             <div className="p-6 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="text-lg font-semibold text-pa-light mb-2">Credentials</h3>
               <p className="text-pa-light-muted text-sm">
-                Verifiable credentials issued by recognized authorities that establish agent identity. Credentials are cryptographically signed and include the agent&apos;s public key, issuer information, and validity period.
+                Agent Passports and Machine Passports issued by recognized Realm Issuers. Passports bind keys, principals, mandates, DIDs, trust tiers, issuer metadata, and validity periods.
               </p>
             </div>
             <div className="p-6 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="text-lg font-semibold text-pa-light mb-2">Mandates</h3>
               <p className="text-pa-light-muted text-sm">
-                Explicit authorization documents that define the scope of an agent&apos;s authority. Mandates specify what actions an agent can take, on behalf of whom, and under what conditions.
+                Principal-signed authorization documents that define the delegate relationship, permitted actions, authority boundaries, and operating conditions.
               </p>
             </div>
             <div className="p-6 bg-pa-bg border border-pa-border rounded-lg">
@@ -71,7 +72,13 @@ export default function StandardPage() {
             <div className="p-6 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="text-lg font-semibold text-pa-light mb-2">Revocation</h3>
               <p className="text-pa-light-muted text-sm">
-                A mechanism for issuers to revoke credentials before their expiration, enabling immediate termination of agent authority when needed for security or operational reasons.
+                Issuer status endpoints and nonce increments allow verifiers to reject stale credentials or signed actions immediately after suspension or revocation.
+              </p>
+            </div>
+            <div className="p-6 bg-pa-bg border border-pa-border rounded-lg">
+              <h3 className="text-lg font-semibold text-pa-light mb-2">Hardware Trust Anchors</h3>
+              <p className="text-pa-light-muted text-sm">
+                APIS v2.0 records the strength of the underlying key custody environment, from Tier 1 physical TPM 2.0 to Tier 4 development keys.
               </p>
             </div>
           </div>
@@ -114,10 +121,10 @@ export default function StandardPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-pa-light mb-4">Read the Full Specification</h2>
           <p className="text-pa-light-muted mb-8">
-            Access the complete APIS specification with technical details, examples, and implementation guidance.
+            Access the canonical APIS v2.0 publication and implementation guidance.
           </p>
-          <CTA href={config.docsUrl} variant="primary" external>
-            View Full Documentation
+          <CTA href="https://doi.org/10.5281/zenodo.18820877" variant="primary" external>
+            View DOI Publication
           </CTA>
         </div>
       </Section>

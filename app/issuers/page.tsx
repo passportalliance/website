@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Become an Issuer',
-  description: 'Learn about becoming an APIS credential issuer, including tier requirements, compliance expectations, and the path to recognition.',
+  description: 'Learn about becoming an APIS v2.0 Realm Issuer, including governance, key management, compliance, and verification requirements.',
 }
 
 export default function IssuersPage() {
@@ -15,61 +15,61 @@ export default function IssuersPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">Become an Issuer</h1>
           <p className="text-xl text-pa-light-muted">
-            Issuers are trusted authorities that issue verifiable credentials to principals and agents within the APIS framework.
+            Realm Issuers are trusted authorities that issue Machine Passports and Agent Passports within the APIS v2.0 framework.
           </p>
         </div>
       </Section>
 
       <Section className="pt-0">
         <div className="max-w-3xl">
-          <h2 className="text-2xl font-bold text-pa-light mb-6">Issuer Tier Model</h2>
+          <h2 className="text-2xl font-bold text-pa-light mb-6">Realm Issuer Recognition</h2>
           <p className="text-pa-light-muted mb-8">
-            APIS defines a tiered model for issuers based on their trust level and verification requirements.
+            Passport Alliance recognition signals that an issuer operates under published governance, security, revocation, and audit expectations.
           </p>
 
           <div className="space-y-4">
             <div className="p-6 bg-pa-bg-secondary border border-pa-border rounded-lg">
               <div className="flex items-center gap-3 mb-3">
-                <span className="px-3 py-1 bg-pa-teal/20 text-pa-teal text-sm font-semibold rounded">Tier 1</span>
-                <h3 className="text-lg font-semibold text-pa-light">Foundational Issuers</h3>
+                <span className="px-3 py-1 bg-pa-teal/20 text-pa-teal text-sm font-semibold rounded">Founding</span>
+                <h3 className="text-lg font-semibold text-pa-light">Founding Realm Issuers</h3>
               </div>
               <p className="text-pa-light-muted text-sm mb-4">
-                Organizations that issue credentials to principals (humans or organizations) who then authorize agents. Requires basic identity verification.
+                Initial standards issuers operating the canonical reference realm and root trust anchor material.
               </p>
               <ul className="text-sm text-pa-light-muted space-y-1">
-                <li>• Basic organizational verification</li>
-                <li>• Standard credential issuance</li>
+                <li>• Published issuer metadata and JWKS</li>
+                <li>• Machine and Agent Passport issuance</li>
                 <li>• Registry participation</li>
               </ul>
             </div>
 
             <div className="p-6 bg-pa-bg-secondary border border-pa-border rounded-lg">
               <div className="flex items-center gap-3 mb-3">
-                <span className="px-3 py-1 bg-pa-blue/20 text-pa-blue text-sm font-semibold rounded">Tier 2</span>
-                <h3 className="text-lg font-semibold text-pa-light">Accredited Issuers</h3>
+                <span className="px-3 py-1 bg-pa-blue/20 text-pa-blue text-sm font-semibold rounded">Certified</span>
+                <h3 className="text-lg font-semibold text-pa-light">Certified Realm Issuers</h3>
               </div>
               <p className="text-pa-light-muted text-sm mb-4">
-                Organizations with enhanced verification processes and compliance frameworks. May issue credentials for higher-risk use cases.
+                Organizations that pass conformance, security, governance, and operational review for broader federation trust.
               </p>
               <ul className="text-sm text-pa-light-muted space-y-1">
                 <li>• Enhanced due diligence</li>
                 <li>• Compliance certification</li>
-                <li>• Higher credential limits</li>
+                <li>• Revocation and incident response SLAs</li>
               </ul>
             </div>
 
             <div className="p-6 bg-pa-bg-secondary border border-pa-border rounded-lg">
               <div className="flex items-center gap-3 mb-3">
-                <span className="px-3 py-1 bg-pa-blue/20 text-pa-blue text-sm font-semibold rounded">Tier 3</span>
-                <h3 className="text-lg font-semibold text-pa-light">Root Issuers</h3>
+                <span className="px-3 py-1 bg-pa-blue/20 text-pa-blue text-sm font-semibold rounded">Registered</span>
+                <h3 className="text-lg font-semibold text-pa-light">Registered and Sandbox Issuers</h3>
               </div>
               <p className="text-pa-light-muted text-sm mb-4">
-                Highly trusted organizations that can issue credentials to other issuers. Typically government agencies, major financial institutions, or equivalent entities.
+                Self-attested or limited-scope issuers for controlled partner environments, pilots, and development use.
               </p>
               <ul className="text-sm text-pa-light-muted space-y-1">
-                <li>• Maximum trust level</li>
-                <li>• Can issue sub-issuer credentials</li>
-                <li>• Subject to strict governance</li>
+                <li>• Local trust policy required</li>
+                <li>• Clear non-production labeling where applicable</li>
+                <li>• Upgrade path to certified status</li>
               </ul>
             </div>
           </div>
@@ -84,8 +84,9 @@ export default function IssuersPage() {
               <h3 className="text-lg font-semibold text-pa-light mb-3">Technical Requirements</h3>
               <ul className="text-pa-light-muted text-sm space-y-2">
                 <li>• Secure key management infrastructure</li>
-                <li>• Credential issuance API</li>
+                <li>• APIS-APP passport provisioning API</li>
                 <li>• Revocation registry management</li>
+                <li>• DID, JWKS, status, and credential-chain verification support</li>
                 <li>• Logging and audit capabilities</li>
               </ul>
             </div>
