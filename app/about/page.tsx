@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Learn about Passport Alliance, the open standards initiative and governing body behind APIS v2.0.',
+  description: 'Learn about Passport Alliance, the open standards initiative and governing body behind APIS v2.1.',
 }
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">About Passport Alliance</h1>
           <p className="text-xl text-pa-light-muted">
-            The open standards initiative and governing body behind APIS v2.0.
+            The open standards initiative and governing body behind APIS v2.1.
           </p>
         </div>
       </Section>
@@ -22,10 +22,10 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Our Mission</h2>
           <p className="text-pa-light-muted mb-6">
-            Passport Alliance creates and maintains open standards for AI agent identity, authorization, trust-tier signaling, and accountability. Its current canonical standard is APIS v2.0, published May 4, 2026.
+            Passport Alliance creates and maintains open standards for AI agent identity, authorization, trust-tier signaling, public verification, and accountability. Its current canonical standard is APIS v2.1, published June 29, 2026.
           </p>
           <p className="text-pa-light-muted mb-6">
-            Our work is driven by the recognition that current identity standards were designed for human users and conventional services. Autonomous agents require a framework for principal authority, mandates, delegates, Machine Passports, Agent Passports, signed actions, and rapid revocation.
+            Our work is driven by the recognition that current identity standards were designed for human users and conventional services. Autonomous agents require a framework for principal authority, mandates, delegates, Agent Passport Profiles, Agent Passports, signed actions, proof artifacts, and rapid revocation.
           </p>
         </div>
       </Section>
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <strong className="text-pa-light">AetherPro Technologies</strong>.
             </p>
             <p className="text-pa-light-muted mb-0">
-              Cory created the early Passport work and Legal-Based Access Control (LBAC) framework that informed APIS. Passport Alliance now presents APIS v2.0 as a standards-oriented trust framework for broader issuer, developer, and verifier participation.
+              Cory created the early Passport work and Legal-Based Access Control (LBAC) framework that informed APIS. Passport Alliance now presents APIS v2.1 as a standards-oriented trust framework for broader issuer, developer, verifier, and registry participation.
             </p>
           </div>
 
@@ -92,20 +92,20 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Roadmap</h2>
           <p className="text-pa-light-muted mb-6">
-            APIS v2.0 is the current canonical publication. Our current focus:
+            APIS v2.1 is the current canonical publication. Our current focus:
           </p>
 
           <div className="relative border-l border-pa-border ml-4 space-y-8">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-blue rounded-full -translate-x-1.5"></div>
-              <h3 className="font-semibold text-pa-light">APIS v2.0 Publication</h3>
-              <p className="text-pa-light-muted text-sm mt-1">Canonical specification published with DOI and v1.0 supersession</p>
-              <span className="text-xs text-pa-teal">Published May 4, 2026</span>
+              <h3 className="font-semibold text-pa-light">APIS v2.1 Publication</h3>
+              <p className="text-pa-light-muted text-sm mt-1">Canonical specification published with DOI, v2.0 supersession, and reference proof support</p>
+              <span className="text-xs text-pa-teal">Published June 29, 2026</span>
             </div>
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-border rounded-full -translate-x-1.5"></div>
-              <h3 className="font-semibold text-pa-light">Issuer and Verifier Adoption</h3>
-              <p className="text-pa-light-muted text-sm mt-1">Realm Issuer onboarding, SDK development, and conformance documentation</p>
+              <h3 className="font-semibold text-pa-light">Issuer and Registry Surface</h3>
+              <p className="text-pa-light-muted text-sm mt-1">Realm Issuer onboarding, SDK development, profile publication, and public registry growth</p>
             </div>
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-border rounded-full -translate-x-1.5"></div>
@@ -114,8 +114,8 @@ export default function AboutPage() {
             </div>
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 w-3 h-3 bg-pa-border rounded-full -translate-x-1.5"></div>
-              <h3 className="font-semibold text-pa-light">Phase 4: Industry Adoption</h3>
-              <p className="text-pa-light-muted text-sm mt-1">Broad deployment across enterprise and public-sector use cases</p>
+              <h3 className="font-semibold text-pa-light">Reference Proofs and Adoption</h3>
+              <p className="text-pa-light-muted text-sm mt-1">Herman-style public reference proofs, broader deployment, and enterprise/public-sector adoption</p>
             </div>
           </div>
         </div>

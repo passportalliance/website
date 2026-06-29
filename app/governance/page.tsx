@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Governance',
-  description: 'Learn about the APIS governance model, registry signing, and the transparent standards process.',
+  description: 'Learn about the APIS v2.1 governance model, issuer-registry signing, and the transparent standards process.',
 }
 
 export default function GovernancePage() {
@@ -16,7 +16,7 @@ export default function GovernancePage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">Governance</h1>
           <p className="text-xl text-pa-light-muted">
-            APIS governance ensures the standard remains open, transparent, and responsive to stakeholder needs.
+            APIS governance keeps the standard open, explicit, and accountable as publication, issuer recognition, and verification surfaces evolve.
           </p>
         </div>
       </Section>
@@ -57,26 +57,26 @@ export default function GovernancePage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Registry Signing</h2>
           <p className="text-pa-light-muted mb-6">
-            The APIS registry is a critical infrastructure component that maintains the status of issued credentials. It is secured through a distributed signing model.
+            The APIS issuer-registry layer is a critical trust surface for status publication and verification. It is designed around distributed signing, auditable publication, and clear separation between canonical issuer records and adjacent public reference surfaces.
           </p>
 
           <div className="grid gap-4">
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Multi-Signature Authority</h3>
               <p className="text-pa-light-muted text-sm">
-                Registry updates require signatures from multiple authorized signers, preventing single points of failure.
+                Critical registry updates can require signatures from multiple authorized signers, reducing single points of failure.
               </p>
             </div>
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Transparent Operations</h3>
               <p className="text-pa-light-muted text-sm">
-                All registry operations are logged and publicly auditable, ensuring accountability.
+                Registry and publication operations are designed to be logged and auditable, supporting accountability without overstating current automation.
               </p>
             </div>
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Distributed Trust</h3>
               <p className="text-pa-light-muted text-sm">
-                The signing authority is distributed across multiple independent parties.
+                Signing authority and stewardship can be distributed across multiple independent parties as the ecosystem matures.
               </p>
             </div>
           </div>
@@ -137,6 +137,12 @@ export default function GovernancePage() {
               title="RFC Process"
               description="How proposals are submitted, reviewed, and adopted."
               href={`${config.docsUrl}/governance/process/`}
+              external
+            />
+            <LinkCard
+              title="Agent Registry Surface"
+              description="See how public verification records and reference proofs are presented today."
+              href={`${config.docsUrl}/registry/`}
               external
             />
           </div>

@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'For Developers',
-  description: 'Build with APIS v2.0: provision Agent Passports, verify signed actions, enforce mandates, and check revocation.',
+  description: 'Build with APIS v2.1: define issuance profiles, mint Agent Passports, verify signed actions, enforce mandates, and publish proof artifacts.',
 }
 
 export default function DevelopersPage() {
@@ -16,7 +16,7 @@ export default function DevelopersPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">For Developers</h1>
           <p className="text-xl text-pa-light-muted">
-            Build agent systems that implement APIS v2.0 for identity, authorization, trust-tier signaling, and accountability.
+            Build agent systems that implement APIS v2.1 for identity, authorization, trust-tier signaling, proof publication, and accountability.
           </p>
         </div>
       </Section>
@@ -25,7 +25,7 @@ export default function DevelopersPage() {
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-pa-light mb-6">Quick Integration Path</h2>
           <p className="text-pa-light-muted mb-8">
-            Get started with APIS v2.0 integration in four steps.
+            Get started with APIS v2.1 integration in four steps.
           </p>
 
           <div className="space-y-6">
@@ -65,7 +65,7 @@ export default function DevelopersPage() {
                 <h3 className="text-lg font-semibold text-pa-light">Test and Deploy</h3>
               </div>
               <p className="text-pa-light-muted text-sm">
-                Use the test registry to validate your implementation before deploying to production.
+                Validate against the published specification, reference proofs, and registry surface before promoting production issuers or delegates.
               </p>
             </div>
           </div>
@@ -79,7 +79,13 @@ export default function DevelopersPage() {
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Credentials</h3>
               <p className="text-pa-light-muted text-sm">
-                Agent Passports and Machine Passports are signed credentials that establish agent and machine identity.
+                Agent Passports and Machine Passports are signed credentials that establish agent and machine identity once issued.
+              </p>
+            </div>
+            <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
+              <h3 className="font-semibold text-pa-light mb-2">Profiles</h3>
+              <p className="text-pa-light-muted text-sm">
+                An Agent Passport Profile defines the issuance class: subject type, agent class, issuer expectations, capabilities, restrictions, endorsements, lifecycle, and proof format.
               </p>
             </div>
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
@@ -97,13 +103,13 @@ export default function DevelopersPage() {
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Registry</h3>
               <p className="text-pa-light-muted text-sm">
-                Public infrastructure for credential status checking and revocation verification.
+                Public verification records and proof artifacts that let verifiers inspect minted credentials, status publication, and reference proofs.
               </p>
             </div>
             <div className="p-4 bg-pa-bg border border-pa-border rounded-lg">
               <h3 className="font-semibold text-pa-light mb-2">Trust Tiers</h3>
               <p className="text-pa-light-muted text-sm">
-                Verifiers can require Tier 1 physical TPM, Tier 2 vTPM, Tier 2.5 DNSSEC, Tier 3 software HSM, or Tier 4 development keys.
+                Verifiers can require physical TPM, attestable vTPM, confidential-compute evidence, namespace proof, software HSM, or development keys according to policy.
               </p>
             </div>
           </div>
@@ -130,6 +136,12 @@ export default function DevelopersPage() {
               title="SDK Documentation"
               description="Language-specific SDK guides and references."
               href={`${config.docsUrl}/developers/sdk/`}
+              external
+            />
+            <LinkCard
+              title="Agent Registry"
+              description="Inspect reference proofs, registry entries, and profile examples while implementing verification logic."
+              href={`${config.docsUrl}/registry/`}
               external
             />
           </div>

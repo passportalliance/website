@@ -5,24 +5,24 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Passport Alliance | APIS v2.0 Agent Identity Standard',
+    default: 'Passport Alliance | APIS v2.1 Agent Identity Standard',
     template: '%s | Passport Alliance',
   },
-  description: 'Passport Alliance governs APIS v2.0, the open Agent Passport Issuance Standard for verifiable AI agent identity, mandates, trust anchors, and revocation.',
-  keywords: ['APIS v2.0', 'Agent Passport Issuance Standard', 'AI identity', 'agent authorization', 'verifiable credentials', 'AI agents', 'delegation', 'Passport Alliance'],
+  description: 'Passport Alliance governs APIS v2.1, the open Agent Passport Issuance Standard for verifiable AI agent identity, mandates, trust anchors, profiles, and revocation.',
+  keywords: ['APIS v2.1', 'Agent Passport Issuance Standard', 'AI identity', 'agent authorization', 'verifiable credentials', 'AI agents', 'delegation', 'Passport Alliance'],
   authors: [{ name: 'Passport Alliance' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://passportalliance.org',
     siteName: 'Passport Alliance',
-    title: 'Passport Alliance | APIS v2.0 Agent Identity Standard',
-    description: 'The open standards initiative and governing body behind APIS v2.0.',
+    title: 'Passport Alliance | APIS v2.1 Agent Identity Standard',
+    description: 'The open standards initiative and governing body behind APIS v2.1.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Passport Alliance | APIS v2.0 Agent Identity Standard',
-    description: 'The open standards initiative and governing body behind APIS v2.0.',
+    title: 'Passport Alliance | APIS v2.1 Agent Identity Standard',
+    description: 'The open standards initiative and governing body behind APIS v2.1.',
   },
   robots: {
     index: true,

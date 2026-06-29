@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Passport Alliance | The Identity Standard for AI Agents',
-  description: 'The open standards initiative and governing body behind APIS v2.0: verifiable identity, scoped authorization, and accountable AI agent operation.',
+  description: 'The open standards initiative and governing body behind APIS v2.1: verifiable identity, scoped authorization, registry-ready profiles, and accountable AI agent operation.',
 }
 
 export default function Home() {
@@ -19,12 +19,15 @@ export default function Home() {
             Open Standards for <span className="text-gradient">Verifiable AI Agent Identity</span>
           </h1>
           <p className="text-xl text-pa-light-muted mb-10 max-w-2xl mx-auto">
-            Passport Alliance governs APIS v2.0, the Agent Passport Issuance Standard for agent legal identity,
-            hardware trust anchors, and interoperable delegation across organizations and frameworks.
+            Passport Alliance governs APIS v2.1, the Agent Passport Issuance Standard for agent identity,
+            scoped delegation, trust anchors, public proof records, and registry-ready agent profiles.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTA href={config.docsUrl} variant="primary" external>
               Read Documentation
+            </CTA>
+            <CTA href={`${config.docsUrl}/registry/`} variant="secondary" external>
+              View Agent Registry
             </CTA>
             <CTA href="/issuers" variant="secondary">
               Become an Issuer
@@ -86,7 +89,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="section-title text-center mb-4">Three Pillars of Trust</h2>
           <p className="section-subtitle text-center mx-auto mb-12">
-            APIS v2.0 establishes a foundation for agent identity, authorization, hardware-rooted trust, and revocation.
+            APIS v2.1 establishes a foundation for agent identity, authorization, trust signaling, public verification, and revocation.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -97,7 +100,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-pa-light mb-3">Identity</h3>
               <p className="text-pa-light-muted text-sm">
-                Realm-scoped DIDs and Agent Passports that bind an agent key to an issuer, principal, mandate, and trust tier.
+                Realm-scoped DIDs and Agent Passports that bind an agent key to an issuer, principal, mandate, trust tier, and public verification context.
               </p>
             </div>
             <div className="text-center">
@@ -119,7 +122,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-pa-light mb-3">Accountability</h3>
               <p className="text-pa-light-muted text-sm">
-                Signed agent actions, public verification, and revocation by nonce increment for trust enforcement.
+                Signed agent actions, proof artifacts, and revocation by nonce increment for trust enforcement.
               </p>
             </div>
           </div>
@@ -131,7 +134,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="section-title text-center mb-4">How It Works</h2>
           <p className="section-subtitle text-center mx-auto mb-12">
-            A trust chain from Realm Issuers to principals, mandates, delegates, and machine trust anchors.
+            A trust chain from Realm Issuers to principals, mandates, delegates, profiles, and public verification records.
           </p>
           <div className="relative">
             {/* Trust Chain Flow */}
@@ -144,7 +147,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-pa-light">Realm Issuer</h3>
-                <p className="text-xs text-pa-light-muted mt-1">Issues passports</p>
+                <p className="text-xs text-pa-light-muted mt-1">Issues credentials and trust metadata</p>
               </div>
 
               {/* Arrow */}
@@ -167,7 +170,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-pa-light">Principal</h3>
-                <p className="text-xs text-pa-light-muted mt-1">Authorizes agents</p>
+                <p className="text-xs text-pa-light-muted mt-1">Owns authority and scope</p>
               </div>
 
               {/* Arrow */}
@@ -190,7 +193,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-pa-light">Delegate</h3>
-                <p className="text-xs text-pa-light-muted mt-1">Signs authorized actions</p>
+                <p className="text-xs text-pa-light-muted mt-1">Acts under passport and mandate</p>
               </div>
             </div>
           </div>
@@ -240,7 +243,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-pa-light mb-1">No existing standard addresses this</h3>
                 <p className="text-pa-light-muted text-sm">
-                  Current identity standards were designed for humans and services, not autonomous delegated agents. APIS v2.0 fills this gap.
+                  Current identity standards were designed for humans and services, not autonomous delegated agents. APIS v2.1 fills this gap with explicit credential, mandate, and verification semantics.
                 </p>
               </div>
             </div>

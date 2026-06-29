@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Become an Issuer',
-  description: 'Learn about becoming an APIS v2.0 Realm Issuer, including governance, key management, compliance, and verification requirements.',
+  description: 'Learn about becoming an APIS v2.1 Realm Issuer, including governance, key management, proof publication, and verification requirements.',
 }
 
 export default function IssuersPage() {
@@ -15,7 +15,7 @@ export default function IssuersPage() {
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-pa-light mb-6">Become an Issuer</h1>
           <p className="text-xl text-pa-light-muted">
-            Realm Issuers are trusted authorities that issue Machine Passports and Agent Passports within the APIS v2.0 framework.
+            Realm Issuers are trusted authorities that issue Machine Passports and Agent Passports within the APIS v2.1 framework and publish the evidence verifiers depend on.
           </p>
         </div>
       </Section>
@@ -39,7 +39,7 @@ export default function IssuersPage() {
               <ul className="text-sm text-pa-light-muted space-y-1">
                 <li>• Published issuer metadata and JWKS</li>
                 <li>• Machine and Agent Passport issuance</li>
-                <li>• Registry participation</li>
+                <li>• Issuer-registry participation</li>
               </ul>
             </div>
 
@@ -85,7 +85,7 @@ export default function IssuersPage() {
               <ul className="text-pa-light-muted text-sm space-y-2">
                 <li>• Secure key management infrastructure</li>
                 <li>• APIS-APP passport provisioning API</li>
-                <li>• Revocation registry management</li>
+                <li>• Revocation and status publication</li>
                 <li>• DID, JWKS, status, and credential-chain verification support</li>
                 <li>• Logging and audit capabilities</li>
               </ul>
@@ -125,7 +125,7 @@ export default function IssuersPage() {
               <div className="w-8 h-8 bg-pa-blue/10 rounded-full flex items-center justify-center flex-shrink-0 text-pa-blue font-semibold">3</div>
               <div>
                 <h3 className="font-semibold text-pa-light mb-1">Onboard</h3>
-                <p className="text-pa-light-muted text-sm">Integrate with the APIS registry and begin issuing credentials according to the standard.</p>
+                <p className="text-pa-light-muted text-sm">Integrate with the issuer-registry model and begin issuing credentials according to the standard.</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
